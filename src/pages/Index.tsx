@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Gamepad2, Users, Trophy, Sparkles, Shield, Code, Shirt, Megaphone, Fan } from 'lucide-react';
 import LoadingScreen from './src/pages/LoadingScreen.tsx';
 
