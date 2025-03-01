@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import { Gamepad2, Users, Trophy, Sparkles, Shield, Code, Shirt, Megaphone, Fan } from 'lucide-react';
 
-  useEffect(() => {
-    document.title = "StichUp | Home";
-
 const features = [
   {
     title: "Premium Knowledge",
