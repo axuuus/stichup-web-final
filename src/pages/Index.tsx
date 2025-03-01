@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Gamepad2, Users, Trophy, Sparkles, Shield, Code, Shirt, Megaphone, Fan } from 'lucide-react';
-import LoadingScreen from './src/pages/LoadingScreen.tsx';
+
+  useEffect(() => {
+    document.title = "StichUp | Home";
 
 const features = [
   {
@@ -36,21 +38,9 @@ const features = [
 ];
 
 const Index: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     document.title = "StichUp | Home";
-
-    // Simulate loading delay (e.g., 2 seconds)
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
   }, []);
-
-  return (
-    <div className="relative min-h-screen pt-[8.5rem] pb-16 px-6 animate-fade-in overflow-hidden">
-      {/* Show loading screen when content is loading */}
-      {isLoading && <LoadingScreen />}
 
   return (
     <div className="relative min-h-screen pt-[8.5rem] pb-16 px-6 animate-fade-in overflow-hidden">
